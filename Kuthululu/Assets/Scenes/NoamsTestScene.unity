@@ -770,6 +770,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 53.73, y: 0, z: 0}
+--- !u!1 &880114313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 880114314}
+  - component: {fileID: 880114316}
+  - component: {fileID: 880114315}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &880114314
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880114313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1448219799}
+  - {fileID: 1427388213}
+  m_Father: {fileID: 1204227107}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -290, y: 87.16745}
+  m_SizeDelta: {x: 580, y: 174.3349}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &880114315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880114313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &880114316
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880114313}
+  m_CullTransparentMesh: 1
 --- !u!1 &1035254460
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseIndi: {fileID: 599898755}
   cellIndi: {fileID: 1667725248}
+  placeHolder: {fileID: 5699246241497753121, guid: 00a3df5606309f44089f70749aaceab0, type: 3}
   GetMousePos: {fileID: 538827457}
   grid: {fileID: 1443569875}
 --- !u!1 &1204227103
@@ -831,7 +909,6 @@ GameObject:
   - component: {fileID: 1204227106}
   - component: {fileID: 1204227105}
   - component: {fileID: 1204227104}
-  - component: {fileID: 1204227108}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -914,8 +991,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1448219799}
-  - {fileID: 1427388213}
+  - {fileID: 880114314}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -923,21 +999,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1204227108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1204227103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b09fef163f4a7b94a968681b984906c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buildingPrefab: {fileID: 1667725248}
-  placeSystem: {fileID: 1035254460}
-  placeSys: {fileID: 1035254462}
 --- !u!1 &1239367308
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,7 +1056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Tower
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1204,8 +1265,9 @@ GameObject:
   - component: {fileID: 1427388216}
   - component: {fileID: 1427388215}
   - component: {fileID: 1427388214}
+  - component: {fileID: 1427388217}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,18 +1280,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427388212}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1239367309}
-  m_Father: {fileID: 1204227107}
+  m_Father: {fileID: 880114314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275, y: -234}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -211.55225, y: -6}
+  m_SizeDelta: {x: 95.5906, y: 90.2553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427388214
 MonoBehaviour:
@@ -1275,13 +1337,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1427388217}
+        m_TargetAssemblyTypeName: SpawnGhost, Assembly-CSharp
+        m_MethodName: EnableBuilding
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1325,6 +1387,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427388212}
   m_CullTransparentMesh: 1
+--- !u!114 &1427388217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427388212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09fef163f4a7b94a968681b984906c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingPrefab: {fileID: 2581925682711572120, guid: bd8b70899de43e446a8414e2f5863b77, type: 3}
+  placeSystem: {fileID: 1035254460}
+  placeSys: {fileID: 1035254462}
 --- !u!1 &1443569874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,6 +1459,7 @@ GameObject:
   - component: {fileID: 1448219802}
   - component: {fileID: 1448219801}
   - component: {fileID: 1448219800}
+  - component: {fileID: 1448219803}
   m_Layer: 5
   m_Name: House
   m_TagString: Untagged
@@ -1396,18 +1474,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448219798}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 688542301}
-  m_Father: {fileID: 1204227107}
+  m_Father: {fileID: 880114314}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -234}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -107, y: -6}
+  m_SizeDelta: {x: 95.5906, y: 90.2553}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448219800
 MonoBehaviour:
@@ -1453,7 +1531,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1204227108}
+      - m_Target: {fileID: 1448219803}
         m_TargetAssemblyTypeName: SpawnGhost, Assembly-CSharp
         m_MethodName: EnableBuilding
         m_Mode: 1
@@ -1503,6 +1581,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448219798}
   m_CullTransparentMesh: 1
+--- !u!114 &1448219803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448219798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09fef163f4a7b94a968681b984906c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildingPrefab: {fileID: 4730820966079453678, guid: 38ea95d29b499cc4fbf9d160840de85e, type: 3}
+  placeSystem: {fileID: 1035254460}
+  placeSys: {fileID: 1035254462}
 --- !u!1 &1667725248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4730820966079453678, guid: 38ea95d29b499cc4fbf9d160840de85e, type: 3}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj": {}
+    "D:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj": {}
   },
   "projects": {
-    "d:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj": {
+    "D:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj",
+        "projectUniqueName": "D:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "d:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj",
+        "projectPath": "D:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\Assembly-CSharp.csproj",
         "packagesPath": "C:\\Users\\noamh\\.nuget\\packages\\",
-        "outputPath": "d:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\obj\\",
+        "outputPath": "D:\\UniversityLectureAndCo\\Softwares\\UNITY\\KuthuluClone\\Kuthululul\\Kuthululu\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
