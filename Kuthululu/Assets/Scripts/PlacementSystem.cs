@@ -26,7 +26,6 @@ public class PlacementSystem : MonoBehaviour
                 {
                     PlaceBuilding();
                 }
-                
             }
         }
     
@@ -57,6 +56,7 @@ public class PlacementSystem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Blocked"))
         {
+            stopSign.SetActive(true);
             Debug.Log("Entering");
             canBePlaced = false;
         }
@@ -65,6 +65,7 @@ public class PlacementSystem : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Blocked"))
         {
+            stopSign.SetActive(false);
             Debug.Log("leaving");
             canBePlaced = true;
         }
