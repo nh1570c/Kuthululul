@@ -1,6 +1,15 @@
+<<<<<<< e384e5794fba429a0f57780e172106f076a05da0
 Base path: 'D:/UniversityLectureAndCo/Softwares/UNITY/2023.1.11f1/Editor/Data', plugins path 'D:/UniversityLectureAndCo/Softwares/UNITY/2023.1.11f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
 Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)
 
 Quitting shader compiler process
+=======
+Base path: 'D:/UniversityLectureAndCo/Softwares/UNITY/2023.1.11f1/Editor/Data', plugins path 'D:/UniversityLectureAndCo/Softwares/UNITY/2023.1.11f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+
+Unhandled exception: Protocol error - failed to read magic number (error -2147483644, transferred 0/4)
+
+Quitting shader compiler process
+>>>>>>> Retry of previous commit
